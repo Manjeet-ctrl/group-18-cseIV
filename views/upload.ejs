@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your Portfolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container upload-page">
+        <h1>Upload Your Portfolio</h1>
+
+        <form action="/portfolio/upload" method="POST">
+            <label for="title">Portfolio Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="skills">Skills (comma separated):</label>
+            <input type="text" id="skills" name="skills" placeholder="e.g. JavaScript, HTML, CSS"><br><br>
+
+            <button type="submit">Submit Portfolio</button>
+        </form>
+
+        <p>Go back to <a href="/portfolio/view">view your portfolios</a></p>
+    </div>
+</body>
+</html>

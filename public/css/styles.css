@@ -1,0 +1,712 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 2em;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    color: #000;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-left {
+    width: 50%;
+    margin-top: 3em;
+}
+
+.hero h1 {
+    font-size: 5em;
+
+}
+
+.hero p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.hero-images {
+    width: 50%;
+}
+
+.hero-images img {
+    width: 70%;
+    margin: 10px;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Clients Section */
+.clients img {
+    width: 100px;
+    margin: 20px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    padding: 2em;
+    height: 400px;
+}
+
+.service {
+    text-align: center;
+    margin-top: 5em;
+}
+
+.service img {
+    width: 100px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 3em;
+    height: 3em;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-bottom: 1.5em;
+}
+
+.work-item {
+    text-align: start;
+}
+
+.work-item img {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.work-item p {
+    font-weight: bold;
+}
+
+/* Clients Section */
+
+.reviews {
+    text-align: center;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+}
+
+.reviews h2 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+
+.review-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.review-card {
+    background-color: #fdf7f0;
+    border: 1px solid #ffe0b2;
+    padding: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-card p {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    color: #333;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.review-info {
+    display: flex;
+    align-items: start;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+}
+
+.review-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.review-details {
+    text-align: left;
+}
+
+.rating {
+    font-size: 1.2em;
+    color: #000;
+}
+
+.review-details span {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+/* Contact Section */
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.contact-left {
+    flex: 1;
+    padding-right: 2em;
+}
+
+.contact-left h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.contact-left p {
+    margin-bottom: 1em;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    /* Adjust color as per design */
+    font-size: 40px;
+    /* Adjust the size of the icons */
+}
+
+.social-icons a:hover {
+    color: #555;
+    /* Hover effect on icons */
+}
+
+/* Contact Form Styling */
+.contact-right {
+    flex: 1;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 150px;
+}
+
+.form-group button {
+    padding: 35px;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
+/* About Section Styling */
+.about-section {
+    padding: 2em;
+    background-color: #fdfdfd;
+}
+
+.about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.about-section-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #fdeff0;
+    /* light pink background */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 40px auto;
+    gap: 20px;
+}
+
+/* Profile Image and Info */
+.profile-container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-picture-about {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info-about h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.designation-about {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Bio Container */
+.bio-container-about {
+    max-width: 600px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.bio-container-about h4 {
+    margin: 0;
+    font-size: 1.3em;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bio-container-about p {
+    font-size: 1em;
+    color: #555;
+}
+
+.about-description {
+    margin: 2em 0;
+    text-align: center;
+    margin-top: 4em;
+}
+
+.about-description p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Highlight Section */
+.highlight-section {
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.highlight {
+    background-color: #008080;
+    color: white;
+    padding: 0.5em;
+    display: inline-block;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    border-top: 1px solid #eee;
+    margin-top: 4em;
+}
+
+.contact-left h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.contact-left p {
+    margin-bottom: 1.5em;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+.social-icons a:hover {
+    color: #555;
+}
+
+.contact-right .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-right .contact-form .form-group input,
+.contact-right .contact-form .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+.contact-right .contact-form .form-group textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-right .contact-form .form-group button {
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-right .contact-form .form-group button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bio-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .highlight-section {
+        text-align: center;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section-about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio-container-about {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
+
+
+
+.form-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Login Form Styles */
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-form button {
+    width: 100%;
+}
+
+.login-form .error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Upload Form Styles */
+.upload-form .form-group {
+    margin-bottom: 15px;
+}
+
+.upload-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.upload-form input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.upload-form button {
+    width: 100%;
+}
+
+.upload-form .upload-message {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Specific styling for the Register page */
+.register-page .container {
+    max-width: 400px;
+}
+
+.register-page form {
+    width: 100%;
+}
+
+.register-page input[type="text"],
+.register-page input[type="password"] {
+    width: 100%;
+}
+
+.register-page .form-action {
+    margin-top: 20px;
+}
+
+/* Specific styling for the Login page */
+.login-page .container {
+    max-width: 400px;
+}
+
+.login-page form {
+    width: 100%;
+}
+
+.login-page input[type="text"],
+.login-page input[type="password"] {
+    width: 100%;
+}
+
+.login-page .form-action {
+    margin-top: 20px;
+}
+
+/* Specific styling for the Portfolio View page */
+.portfolio-view-page .container {
+    max-width: 800px;
+}
+
+.portfolio-view-page ul {
+    padding: 0;
+}
+
+.portfolio-view-page li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-view-page li h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.portfolio-view-page li p {
+    margin: 5px 0;
+}
+
+/* Specific styling for the Upload page */
+.upload-page .container {
+    max-width: 600px;
+}
+
+.upload-page form {
+    width: 100%;
+}
+
+.upload-page textarea {
+    resize: vertical;
+    min-height: 100px;
+}

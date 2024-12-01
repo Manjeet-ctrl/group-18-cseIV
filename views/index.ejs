@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/f739953c64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+	<%- include('partials/header') %>
+        <div class="hero">
+            <div class="hero-left">
+            <p>Branding | Image making</p>
+            <h1>My awesome portfolio</h1>
+        </div>
+            <div class="hero-images">
+                <img src="images/header.png" alt="Design 1">
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Clients Section -->
+     <hr style="width: 80%;">
+    <section class="clients">
+        
+        <img src="images/behance.jpg" alt="Behance">
+        <img src="images/google.png" alt="Google">
+        <img src="images/apple.jpg" alt="Apple">
+        <img src="images/dribbble.jpg" alt="Dribble">
+        <img src="images/awwwards.jpg" alt="Awwwards">
+        
+    </section>
+    <hr style="width: 80%;">
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service">
+            <img src="images/skill1.png" alt="Product Design">
+            <h3>Product design</h3>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        <div class="service">
+            <img src="images/skill2.png" alt="Art Direction">
+            <h3>Art direction</h3>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        <div class="service">
+            <img src="images/skill3.png" alt="Visual Design">
+            <h3>Visual design</h3>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+    </section>
+
+    <!-- Latest Work Section -->
+    <section class="portfolio">
+        <h2>My latest work</h2>
+        <div class="portfolio-grid">
+            <div class="work-item">
+                <img src="images/work1.png" alt="Free Bird">
+                <p>Free Bird</p>
+                <span>Lynyrd Skynyrd</span>
+            </div>
+            <div class="work-item">
+                <img src="images/work2.png" alt="Purple Haze">
+                <p>Purple Haze</p>
+                <span>Jimi Hendrix</span>
+            </div>
+            <div class="work-item">
+                <img src="images/work3.png" alt="You Really Got Me">
+                <p>You Really Got Me</p>
+                <span>The Kinks</span>
+            </div>
+            <div class="work-item">
+                <img src="images/work4.png" alt="Free Bird">
+                <p>American girl</p>
+                <span>Tom petty</span>
+            </div>
+            <div class="work-item">
+                <img src="images/work5.png" alt="Purple Haze">
+                <p>Whole Lotta Love</p>
+                <span>Led Zeppelin</span>
+            </div>
+            <div class="work-item">
+                <img src="images/work6.png" alt="You Really Got Me">
+                <p>Under Pressure</p>
+                <span>Queen</span>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Clients Testimonial Section -->
+    <section class="reviews">
+        <h2>Reviews</h2>
+        <div class="review-cards">
+            <div class="review-card">
+                <p>Exceptuer sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <div class="review-info">
+                    <img src="images/author1.png" alt="Gemma Nolen">
+                    <div class="review-details">
+                        <div class="rating">★★★★★</div>
+                        <span>Gemma Nolen, Google</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="review-card">
+                <p>Exceptuer sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <div class="review-info">
+                    <img src="images/author2.png" alt="Gemma Nolen">
+                    <div class="review-details">
+                        <div class="rating">★★★★★</div>
+                        <span>Gemma Nolen, Google</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="review-card">
+                <p>Exceptuer sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <div class="review-info">
+                    <img src="images/author3.png" alt="Gemma Nolen">
+                    <div class="review-details">
+                        <div class="rating">★★★★★</div>
+                        <span>Gemma Nolen, Google</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+	<%- include('partials/footer') %>
+</body>
+</html>
